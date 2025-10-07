@@ -1,6 +1,6 @@
 CREATE TABLE IF NOT EXISTS "learning-session-db"."new_table_<user_id>" WITH(
 	partitioning = ARRAY [ 'bucket(id, 16)' ],
-	location = 's3://athena-process/learning-session-db/tables/<user_id>',
+	location = 's3://athena-process/learning-session-db/tables/new_table_<user_id>',
 	table_type = 'ICEBERG',
 	is_external = false
 ) AS
