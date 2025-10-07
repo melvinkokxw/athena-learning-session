@@ -1,0 +1,4 @@
+duckdb<1.4
+ibis-framework[athena,duckdb]~=10.8.0
+jupyter~=1.1.1
+pandas
